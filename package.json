@@ -1,0 +1,67 @@
+{
+  "name": "crodity-meteor",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "preversion": "yarn test",
+    "version": "git add --all",
+    "release": "yarn version --new-version patch",
+    "postversion": "git push",
+    "test": "echo ''"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "crodity-react": "https://github.com/ivmarcos/crodity-react.git",
+    "meteor-node-stubs": "~0.2.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-import-resolver-meteor": "^0.3.3",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-meteor": "^4.0.0",
+    "eslint-plugin-react": "^6.2.1"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "settings": {
+      "import/resolver": "meteor"
+    },
+    "rules": {
+      "react/forbid-prop-types": "warn",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ],
+      "import/no-extraneous-dependencies": 0
+    }
+  }
+}
