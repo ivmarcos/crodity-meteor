@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "preversion": "yarn test",
+    "preversion": "npm run test",
     "version": "git add --all",
     "release": "yarn version --new-version patch",
     "postversion": "git push",

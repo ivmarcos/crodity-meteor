@@ -1,40 +1,48 @@
 import React from 'react';
 import LoginSocialButton from 'crodity-react/lib/buttons/LoginSocialButton';
-import RoundFontIcon from 'crodity-react/lib/icons/RoundFontIcon';
+import LoginButton from 'crodity-react/lib/buttons/LoginButton';
 
 
 const LoginScene = () => (
 
   <div className="crd-login-scene">
 
-    <div className="crd-login-scene-social">
+    <div className="crd-login-logo" />
 
-      <LoginSocialButton
-        label="connect with twitter"
-        className="crd-btn-login-twitter"
-      >
-        <RoundFontIcon className="fa fa-twitter" />
-      </LoginSocialButton>
+    <div className="crd-login-social">
 
       <LoginSocialButton
         label="connect with facebook"
-        className="crd-btn-login-facebook"
-      >
-        <RoundFontIcon className="fa fa-facebook" />
-      </LoginSocialButton>
-
+        type="facebook"
+        withIcon
+      />
 
       <LoginSocialButton
-        label="connect with email"
-        className="crd-btn-login-email"
-      >
-        <RoundFontIcon className="fa fa-envelope-o" />
-      </LoginSocialButton>
+        label="connect with twitter"
+        type="twitter"
+        withIcon
+      />
+
+      <LoginSocialButton
+        label="connect with e-mail"
+        type="email"
+        withIcon
+      />
+
+    </div>
+
+    <div className="crd-login-sign">
+
+      <LoginButton>
+        Sign in
+      </LoginButton>
 
     </div>
 
 
   </div>
+
+
 );
 
 
