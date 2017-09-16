@@ -1,47 +1,34 @@
 import React from 'react';
-import LoginSocialButton from 'crodity-react/lib/buttons/LoginSocialButton';
-import LoginButton from 'crodity-react/lib/buttons/LoginButton';
-
+import LoginSocialButton from 'crodity-ui/lib/buttons/LoginSocialButton';
+import AddCheckButton from 'crodity-ui/lib/buttons/AddCheckButton';
+import CrodityIcon from 'crodity-ui/lib/icons/CrodityIcon';
+import Video from 'crodity-ui/lib/landing-page/Video';
 
 const LoginScene = () => (
 
-  <div className="crd-login-scene">
-
-    <div className="crd-login-logo" />
-
-    <div className="crd-login-social">
-
-      <LoginSocialButton
-        label="connect with facebook"
-        type="facebook"
-        withIcon
-      />
-
-      <LoginSocialButton
-        label="connect with twitter"
-        type="twitter"
-        withIcon
-      />
-
-      <LoginSocialButton
-        label="connect with e-mail"
-        type="email"
-        withIcon
-      />
-
-    </div>
-
-    <div className="crd-login-sign">
-
-      <LoginButton>
-        Sign in
-      </LoginButton>
-
-    </div>
-
-
+  <div>
+    <CrodityIcon />
+    <LoginSocialButton
+      type="facebook"
+      label="connect with facebook"
+      withIcon
+      onClick={() => console.log('ok')}
+    />
+    <LoginSocialButton
+      type="twitter"
+      withIcon
+      label="connect with twitter"
+      onClick={() => console.log('ok')}
+    />
+    <LoginSocialButton
+      type="email"
+      label="connect with email"
+      onClick={() => console.log('ok')}
+    />
+    <AddCheckButton onClick={() => console.log('ok')} />
+    <AddCheckButton onClick={() => console.log('ok')} added />
+    <Video src="https://www.youtube.com/embed/zWk5a-lDe8c" />
   </div>
-
 
 );
 

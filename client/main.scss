@@ -1,42 +1,7 @@
 // temporary imports
 
-@import '{}/node_modules/crodity-react/lib/scss/_buttons.scss';
+@import '{}/node_modules/crodity-ui/lib/styles/crodity.scss';
 
 body{
   margin: 0;
-}
-
-.crd-login-scene{
-  background-image: url('/imgs/crodity-back.jpg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.crd-login-social{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.crd-btn-login{
-
-  margin-left: 15px;
-  margin-bottom: 15px;
-  min-width: 250px !important;
-
-  button{
-    box-shadow: 2px 2px 40px 5px rgba(255, 255, 255, 1);
-  }
-
-  @media screen and (max-width: 800px){ 
-    min-width: 280px !important;
-    button {
-     box-shadow: 2px 2px 40px 5px rgba(255, 255, 255, .5);
-    }
-  }
-  
 }
