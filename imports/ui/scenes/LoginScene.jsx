@@ -1,8 +1,11 @@
 import React from 'react';
-import LoginSocialButton from 'crodity-ui/lib/buttons/LoginSocialButton';
-import AddCheckButton from 'crodity-ui/lib/buttons/AddCheckButton';
-import CrodityIcon from 'crodity-ui/lib/icons/CrodityIcon';
-import Video from 'crodity-ui/lib/landing-page/Video';
+
+import {
+  LoginSocialButton,
+  AddCheckButton,
+  CrodityIcon,
+  Video,
+} from 'crodity-ui';
 
 const LoginScene = () => (
 
